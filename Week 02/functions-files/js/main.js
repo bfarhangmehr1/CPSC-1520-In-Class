@@ -17,3 +17,9 @@ function strong(value) {
     //combining string to produce a new string is called concatenation
   return '<strong>' + value + '</strong>';
 }
+function italic(tag){
+  return '<i>' + tag +'</i>';
+}
+var SpanNote = document.querySelector('.important .note');
+
+SpanNote.innerHTML=italic(SpanNote.innerHTML);
