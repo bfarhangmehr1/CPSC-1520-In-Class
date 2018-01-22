@@ -13,7 +13,8 @@
  function handleFeatureLinkClick(evt){
      console.log('a.feature.link was clicked...');
      //set the image src to the anchor's href value
-     featureImage.src = featuerLink.href;
+     //featureImage.src = featuerLink.href;
+     featureImage.src= evt.target.href;
 
      // make the image visible 
      featureImage.classList.remove('hidden');
