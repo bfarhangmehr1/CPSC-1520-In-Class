@@ -8,15 +8,16 @@
 document.querySelector('.feature.frm ').addEventListener( 'submit', function (evt) { 
     var frm = evt.target; 
     var tag = frm.elements.tags;
-     var error = document.querySelector('p.feature.error'); 
+    var error = document.querySelector('p.feature.error'); 
      // ensure that there is a value in the tag field before adding a tag 
+     //ensure there is value in tag before addding tag to paragraph.
      if (tag.value.trim() != '') { 
     // insert a '# ' before the tag for aesthetics
-     document.querySelector('p.feature.tags ').innerHTML += '#' + tag.value; 
-     tag.value = ''; 
+     document.querySelector('p.feature.tags ').innerHTML += '#' + tag.value.trim() + ' '; 
+     tag.value +' ';
+     tag.value = ' '; 
      error.classList.add('hidden');
      } else { 
-
         error.classList.remove('hidden'); }
         evt.preventDefault();
      });
