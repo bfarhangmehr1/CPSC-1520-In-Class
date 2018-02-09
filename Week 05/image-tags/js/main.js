@@ -12,7 +12,8 @@ document.querySelector('.feature.frm ').addEventListener( 'submit', function (ev
      // ensure that there is a value in the tag field before adding a tag 
      if (tag.value.trim() != '') { 
     // insert a '# ' before the tag for aesthetics
-     document.querySelector('p.feature.tags ').innerHTML += '#' + tag.value; tag.value = ''; 
+     document.querySelector('p.feature.tags ').innerHTML += '#' + tag.value; 
+     tag.value = ''; 
      error.classList.add('hidden');
      } else { 
 
