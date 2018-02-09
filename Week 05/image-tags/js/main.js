@@ -13,6 +13,10 @@ document.querySelector('.feature.frm ').addEventListener( 'submit', function (ev
      //ensure there is value in tag before addding tag to paragraph.
      if (tag.value.trim() != '') { 
     // insert a '# ' before the tag for aesthetics
+    if(tag.value.trim().indexOf(' ')>=0){
+    error.innerHTML = "can not contains space"; 
+    error.classList.remove('hidden');
+    }
      document.querySelector('p.feature.tags ').innerHTML += '#' + tag.value.trim() + ' '; 
      tag.value +' ';
      tag.value = ' '; 
