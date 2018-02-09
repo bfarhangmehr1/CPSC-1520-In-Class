@@ -17,7 +17,10 @@ document.querySelector('.feature.frm ').addEventListener( 'submit', function (ev
      tag.value +' ';
      tag.value = ' '; 
      error.classList.add('hidden');
-     } else { 
+    } else {
+        // No data was entred 
+        // I could add some text 
+        error.innerHTML = "Blank input will not be processed"; 
         error.classList.remove('hidden'); }
         evt.preventDefault();
      });
