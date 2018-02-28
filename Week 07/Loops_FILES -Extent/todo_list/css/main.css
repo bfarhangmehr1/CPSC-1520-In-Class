@@ -2,13 +2,13 @@ body {
 	font-family: sans-serif;
 	line-height: 1.5em;
 	margin: 0;
-    padding: 0;   
+    padding: 0;
+    clear: both;
 }
 .messages {
 	margin: auto;
 	padding: 1em;
-    width: 800px;
-    clear: both;
+	width: 800px;
 }
 .messages>table {
 	background-color: transparent;
@@ -55,4 +55,12 @@ body {
 }
 .messages>table>tbody>tr:nth-of-type(odd) {
     background-color: #f9f9f9;
+}
+.stripe {
+    color: rgb(157, 255, 0);
+}
+.myform{
+    width:50px;
+    height: 50px;
+	float: right;
 }
