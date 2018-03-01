@@ -7,7 +7,7 @@ checks.addEventListener('change',function (evt){
     var input= myform.elements.partialstringId;
     var idx = 0;
     while (idx < checks.length) {  
-    if (input.value.toLowerCase().indexOf(checks.item(idx).nodeValue.toLowerCase())>=0){    
+    if (checks.item(idx).nodeValue.toLowerCase().indexOf(input.value.toLowerCase())> -1){    
     checks[idx].classList.add('.stripe');
     } 
     idx = idx + 1;
