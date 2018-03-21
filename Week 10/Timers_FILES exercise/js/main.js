@@ -14,13 +14,12 @@ function updatslide(idx){
    // highlight the first bullet as 'active'
      document.querySelector('.image-tracker .active').classList.remove('active');
      document.querySelectorAll('[data-idx]')[currentImg].classList.add('active');
-    }
-    
+    }    
 }
 var slideshowInterval;    
 slideshowInterval=setInterval(function(){
   currentImg+=1;
-  currentImg=( currentImg >= images.length) ? 0: currentImg;
+  currentImg=(currentImg >= images.length) ? 0: currentImg;
   updatslide(currentImg);
 },3000);
 
