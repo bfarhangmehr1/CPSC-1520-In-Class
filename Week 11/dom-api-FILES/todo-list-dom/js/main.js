@@ -66,7 +66,7 @@ document.querySelector('.todo-frm').addEventListener('submit', function (evt) {
     var dn= '\u21e9'; //unicode valu of up arrow
 	var dnText = document.createTextNode(dn);
 	dnArrow.setAttribute('class','arrow down');
-	upArrow.appendChild(dnText);
+	dnArrow.appendChild(dnText);
 	div.appendChild(dnArrow);
 
 	//add some up/down arrows to our <div>
