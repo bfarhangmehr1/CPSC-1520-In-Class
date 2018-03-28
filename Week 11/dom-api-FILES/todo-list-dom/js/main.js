@@ -37,8 +37,8 @@ document.querySelector('.todo-frm').addEventListener('submit', function (evt) {
 	labelText = document.createTextNode(todoText); //  a node that only has "raw" text - "Todo 1"
 
 	// set appropriate attributes
-	checkbox.setAttribute('type', 'checkbox');  // <input type="cheakbox"  />
-	checkbox.setAttribute('id', 'todo-' + todoCount); //  <input type="cheakbox" id="todo-1"  />
+	checkbox.setAttribute('type', 'checkbox');  // <input type="checkbox"  />
+	checkbox.setAttribute('id', 'todo-' + todoCount); //  <input type="checkbox" id="todo-1"  />
 	label.setAttribute('for', 'todo-' + todoCount); // <label for="todo-1"/>
 	label.setAttribute('contenteditable', ''); // <label for="todo-1" contenteditable />
 	/*
